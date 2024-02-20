@@ -45,11 +45,9 @@ body {
 }
 
 .container {
+  padding: 0 15px;
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -71,18 +69,19 @@ body {
 }
 
 .container-header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
 }
 
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .logo {
@@ -102,13 +101,8 @@ body {
   ;
 }
 
-.contacts {
-  font-style: normal
-}
-
-.contacts-list {
-  display: flex;
-  column-gap: 40px;
+.menu-item {
+  padding: 24px 0;
 }
 
 .menu-item__link {
@@ -122,6 +116,15 @@ body {
 .menu-item__link:hover,
 .menu-item__link:focus {
   color: #404bbf;
+}
+
+.contacts {
+  font-style: normal
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
 }
 
 .contacts-item__link {
@@ -140,13 +143,13 @@ body {
 
 /* Section Hero */
 .hero {
-  padding: 180px 0;
+  padding: 188px 0;
   background-color: #2e2f42;
 }
 
 .hero-title {
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 
@@ -163,6 +166,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
+  min-width: 169px;
   border-radius: 4px;
   padding: 16px 32px;
   border: none;
@@ -188,7 +192,7 @@ body {
 
 .features-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .features-item {
@@ -196,6 +200,8 @@ body {
 }
 
 .features-item__title {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -230,19 +236,23 @@ body {
 
 .team-list {
   display: flex;
-  column-gap: 24px;
-  text-align: center;
+  gap: 24px;
 }
 
 .team-member {
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #FFFFFF
 }
 
+.team-member__name {
+  padding: 32px 0;
+}
+
 .team-member__title {
-  margin-top: 32px;
   margin-bottom: 8px;
 
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -251,8 +261,7 @@ body {
 }
 
 .team-member__text {
-  margin-bottom: 32px;
-
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -281,7 +290,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
-  row-gap: 40px;
+  row-gap: 48px;
 }
 
 .portfolio-border {
@@ -314,12 +323,16 @@ body {
   background-color: #2e2f42;
 }
 
+.logo-ftr {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .logo-footer {
   color: #f4f4fd;
 }
 
 .footer-text {
-  margin-top: 16px;
 
   width: 264px;
   font-weight: 400;
